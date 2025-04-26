@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="index.css">
+
+    <title>JustStreamIt</title>
+</head>
+
+<body class="no-scroll">
+
+    <!-- SECTION BAR DE NAV -->
+
+    <div id="loadingWeb" class="loadingWeb">
+        <img class="img-logo" src="img/logo-white.png" alt="">
+        <a href="/index.html" class="logo"> JustStreamIt</a>
+        <div class="loader"></div>
+
+    </div>
+    <header>
+        <nav class="bar-nav">
+
+            <div class="logo-box">
+
+                <img class="img-logo" src="img/logo-white.png" alt="">
+                <a href="/index.html" class="logo"> JustStreamIt</a>
+            </div>
+        </nav>
+
+    </header>
+    <section class="hero">
+        <div class="container-hero">
+            <div class="hero-colL">
+                <div class="card-hero">
+                    <img id="filmMoment" src="/img/DefaultImg.webp" alt="movie">
+                </div>
+
+            </div>
+            <div class="hero-colR">
+                <h1 id="TitleFilmMoment">TitleFilmMoment</h1>
+                <div class="detail-film">
+
+                    <p id="genre-film"></p>
+                    <p id="year-film"></p>
+                    <p id="score-film"> <img src="img/material-symbols--star.svg" alt="Star"
+                            style="width: 15px; height: 15px; color: gold;"> <span id="score-film-span"> </span> </p>
+                    <p id="direction-film"></p>
+
+                </div>
+                <div class="btns-container">
+                    <button class="btn-general btn-read" id="hero-detail-btn">Detail</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-hero modal-hero-closed">
+
+            <div class="modal-content-L">
+                <div class="card-modal">
+                    <img id="filmMoment-modal" src="/img/DefaultImg.webp" alt="">
+                </div>
+            </div>
+            <div class="modal-content-R">
+                <h1 id="TitleFilmMoment-modal">TitleFilmMoment</h1>
+                <div class="detail-film-modal">
+                    <p id="genre-film-modal"></p>
+                    <p id="year-film-modal"></p>
+
+                    <p id="score-film-modal">
+
+                    </p>
+                    <p id="direction-film-modal"></p>
+                </div>
+                <p class="resumen-p">Description :</p>
+                <p id="description-modal"></p>
+                <p class="resumen-p">Avec :</p>
+                <p id="acteur-modal"></p>
+
+            </div>
+            <button class="btn-general btn-close">
+                <img src="img/twemoji--cross-mark.svg" alt="Close" style="width: 30px; height: 30px; color: #e80000;">
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- 
+    <section class="categorie-best">
+        <div class="card-category">
+            <h2> Films les mieux notés</h2>
+        </div>
+        <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
+
+        </swiper-container>
+    </section> -->
+
+    <section class="categorie-best">
+        <div class="card-category">
+            <h2> Films les mieux notés</h2>
+        </div>
+
+        <div class="slider">
+            <button id="prevBtn" class="slider-btn">◀</button>
+            <div class="slider-wrapper">
+                <div class="slider-track">
+                    <!-- Aquí vamos a insertar las cards dinámicamente -->
+                </div>
+            </div>
+            <button id="nextBtn" class="slider-btn">▶</button>
+        </div>
+    </section>
+
+
+    <section class="sec categorie-1">
+
+        <div class="card-category genre-1">
+            <h2>Categorie Film</h2>
+        </div>
+
+        <div class="box-card">
+
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+            </div>
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4 show">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4 show">
+                <img src="/img/DefaultImg.webp" alt="">
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="sec categorie-2">
+
+        <div class="card-category genre-2">
+            <h2>Categorie Film</h2>
+        </div>
+
+        <div class="box-card">
+
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+                <div class="overlay">
+                    <span>
+                        <span class="iconify" data-icon="emojione:star" style="color: gold; font-size: 16px;"></span>
+                    </span>
+                    <h3 class="title-categorie-1">Title Film Categorie</h3>
+                </div>
+
+            </div>
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+
+
+            </div>
+            <div class="card-single  card-film4 show">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4 show">
+                <img src="/img/DefaultImg.webp" alt="">
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="sec select-c categorie-3">
+
+        <div class="card-category genre-3">
+            <h2>Categorie Film</h2>
+        </div>
+
+        <div class="box-card">
+
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+
+
+            </div>
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4 show">
+                <img src="/img/DefaultImg.webp" alt="">
+
+            </div>
+            <div class="card-single  card-film4 show">
+                <img src="/img/DefaultImg.webp" alt="">
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="sec select-c categorie-3 categorie-select">
+        <h2>Select categorie</h2>
+        <select name="categorie" id="select-categorie"></select>
+        <div class="box-card">
+
+        </div>
+    </section>
+
+
+    <section class="sec select-c categorie-3 categorie-select-2">
+        <h2>Select categorie</h2>
+        <select name="categorie" id="select-categorie-2"></select>
+        <div class="box-card">
+
+        </div>
+    </section>
+
+    <footer class=" footer">
+
+
+        <div class="footer">
+            <div class="row">
+                <a href="#"> <span class="iconify" data-icon="ic:baseline-facebook"
+                        style="color: #260879; font-size: 24px;"></span>
+                </a>
+                <a href="#"> <span class="iconify" data-icon="fe:instagram"
+                        style="color: #260879; font-size: 24px;"></span>
+                </a>
+                <a href="#"> <span class="iconify" data-icon="prime:twitter"
+                        style="color: #260879; font-size: 24px;"></span>
+                </a>
+                <a href="#"> <span class="iconify" data-icon="mdi:youtube"
+                        style="color: #260879; font-size: 24px;"></span>
+                </a>
+
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    <script src="/fetch.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
